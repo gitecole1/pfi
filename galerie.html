@@ -6,28 +6,30 @@
     <title>Galerie</title>
     <style>
         .conteneur{
-            background-color: chartreuse;
+         
+            
             display: grid;
             grid-template-columns: 1fr 1fr;
-            padding: 10%;
             grid-template-areas: 
             "header   header  header"
             "main     main    main"
-            "main     main    main"
             "footer   footer  footer";
             gap : 2px
+            
         }
 
         header{
             grid-area: header;
-            background-color: darkgreen;
-            padding: 2%;
+            padding: 1%;
+            background-image: url(images/0d7906b30717701c9585c1db2de0a8be.gif);
+        
         }
         
         main{
             grid-area: main ;
             background-color: blueviolet;
             padding: 5%;
+           background-image: url(images/pariswinte_Nz9hx9Q8.gif);
         }
 
         footer{
@@ -38,32 +40,90 @@
 
         .flex{
             display: flex;
-            justify-content:space-around;
-            
+           flex-wrap: wrap;
+           justify-content:space-around;
+           gap:10px
+           
         }
-        .cellule{
-            padding: 1em;
-            border: 1px solid black;
-            background-color: gray;
-            border-radius: 0.5em;
-            
-            
-
+    
+         .flex img{
+            flex: calc(30% 10px);
+            max-width: calc(30% - 10%);
+            border-radius: 3%;
         }
-          
+        @media screen and (max-width: 600px){
+              .flex img{
+                flex: calc(40% 10px);
+                max-width: calc(40% - 10%);
+              }
+        }
+        a{
+            color: green;
+            text-decoration: none;
+        }
+       a:hover{
+        color: blue;
+       }
+       div.desc {
+                  padding: 5px;
+                text-align: center;
+       }
+     div .allo{
+        background-color: blue;
+        width: 20%;
+        text-align: center;
+     }
+     div .moi{
+        background-color: brown;
+              
+      width: 20%;
+       
+     }
+    
     </style>
 </head>
 <body>
     <div class="conteneur">
-        <header> en tête</header>
+        <header> 
+               <div class="conteneur">
+                   <a href="">page1</a> 
+                 
+                  
+               </div>
+        </header>
 
         <main>
             <div class="flex">
-                <div class="cellule">1</div>
-                <div class="cellule">2</div> 
-                <div class="cellule">3</div>
-                <div class="cellule">4</div>
-                <div class="cellule">5</div>
+                   <div class="moi">
+                     <img src="images/-314.jpg" alt="Cinque Terre">  
+                      <div class="allo">texte</div>
+                    </div>
+                    
+                    <img src="images/-314.jpg" alt="Cinque Terre">
+                    <img src="images/9d645a18043709fcf5894d30e2af4fc3.jpg" alt="" class="image">
+                  
+                    
+                    <img src="images/101164601_o.jpg" alt="Cinque Terre">
+
+                    <img src="images/4.webp" alt="Cinque Terre">
+
+                    <img src="images/craciun-15500.jpg" alt="Cinque Terre">
+
+                    <img src="images/0d7906b30717701c9585c1db2de0a8be.gif" alt="Cinque Terre">
+
+                    <img src="images/bonne-journee_180.jpg" alt="Cinque Terre">
+                     
+                    <img src="images/cartes-de-voeux-gratuites-a-telecharger.jpg" alt="Cinque Terre">
+                    
+                    <img src="images/fresh-lime-falling-black-background_841229-15851.jpg" alt="Cinque Terre">
+            
+                    <img src="images/world-girl-2827505.webp" alt="Cinque Terre">
+
+                    <img src="images/stock-photo-create-visually-striking-background-generative-ai_925376-14702.avif" alt="Cinque Terre" class="image">
+
+                    <img src="images/azbirthdaywishes-8254.jpg" alt="Cinque Terre">
+               
+                    <img src="images/50d22e00d08a3a8747233b88c1811dda.jpg" alt="Cinque Terre">
             </div>
         </main>
 
