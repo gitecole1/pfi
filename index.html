@@ -4,8 +4,170 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>cv</title>
+    <style>
+body{
+    margin: 15%;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+  
+  
+}
+.container{
+    background-color: blue;
+    border: 3px solid #ccc;
+    
+   width: 70%;
+}
+
+/* Create four equal columns that sits next to each other */
+.column1 {
+  flex: 25%;
+  max-width: 37%;
+  padding:  1px;
+ background-color:rgb(8, 152, 102);
+
+}
+
+.column2 {
+  flex: 25%;
+  max-width: 75%;
+  padding:  4px;
+ background-color:white;
+}
+
+div.gallery img {
+             width: 100%;
+            height: auto;
+        }
+
+.flex{
+    display: flex;
+    border: 2px solid rgba(25, 18, 219, 0.453);
+    height: 3%;
+    margin-top: 15%;
+    color:yellow;
+    margin-left: 20%;
+    margin-right: 30%;
+    padding-left: 6%;
+ font-size:x-large;
+}
+
+h3,p{
+    margin-left: 19%;
+}
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column1 {
+    flex: 50%;
+    max-width: 50%;
+  }
+  .column2 {
+    flex: 50%;
+    max-width: 50%;
+  }
+
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column1 {
+    flex: 100%;
+    max-width: 100%;
+  }
+
+  .column2 {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+
+    </style>
 </head>
 <body>
-    
+    <div class="container">
+        <div class="row">
+        
+        <div class="column1">
+            <div class="gallery">
+                <img src="images/-314.jpg" alt="Cinque Terre">
+            </div>
+
+            <div class="flex">
+              profil
+            </div>
+                  <h3>address</h3>
+                  <p>dfjvreh</p>
+
+                  <h3>email</h3>
+                  <p>hgdefewg</p>
+
+                 <h3>telephone</h3>
+                 <p>degry</p>
+
+                 <h3>date</h3>
+                 <p>dfgr</p>
+
+                  <h3>ferm</h3>
+                 <p>hfegehr</p>
+
+            <div class="flex">
+                competence
+            </div>
+                 <p>hedfghhjh</p>
+                 <p></p>
+                 <p></p>
+                 <p></p>
+        
+             <div class="flex">
+                loisir
+            </div>
+              <p>gefgewgjeg</p>
+              <p></p>
+              <p></p>
+              <p></p>
+            </div>
+       
+        
+        <div class="column2">
+              <div class="bloc"> <h1> nom prenom</h1></div>
+
+              <p></p>
+
+              <h2>experience</h2>
+
+
+
+
+
+
+              <h2>formation</h2>
+        </div>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+         
+      </div>
 </body>
 </html>
