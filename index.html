@@ -25,7 +25,7 @@ body{
 /* Create four equal columns that sits next to each other */
 .column1 {
   flex: 25%;
-  max-width: 37%;
+  max-width: 50%;
   padding:  1px;
  background-color:rgb(8, 152, 102);
 
@@ -50,7 +50,7 @@ div.gallery img {
     margin-top: 15%;
     color:yellow;
     margin-left: 20%;
-    margin-right: 30%;
+    margin-right: 6%;
     padding-left: 6%;
  font-size:x-large;
 }
@@ -59,14 +59,27 @@ h3,p{
     margin-left: 19%;
 }
 /* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 700px) {
   .column1 {
-    flex: 100%;
-    max-width: 100%;
+    flex: 25%;
+    max-width: 50%;
+    padding:  1px;
+   
+    background-color: rgba(72, 159, 26, 0.921);
+   
   }
   .column2 {
-    flex: 100%;
-    max-width: 100%;
+    flex: 25%;
+  max-width: 75%;
+  padding:  4px;
+  }
+  .flex{
+    display: flex;
+    margin-right: 16%;
+    font-size: large;
+     margin-right: 6%;
+     border: 2px solid rgba(16, 216, 63, 0.407);
+    color: rgb(197, 189, 29);
   }
 
 }
@@ -76,12 +89,18 @@ h3,p{
   .column1 {
     flex: 200%;
     max-width: 240%;
-    background-color: chartreuse;
+    background-color: rgb(20, 100, 157);
+    color: white;
+    
   }
 
   .column2 {
     flex: 100%;
     max-width: 220%;
+  }
+  .flex{
+    border: 2px solid rgba(189, 219, 18, 0.692);
+    color: rgb(223, 181, 12);
   }
 }
 
