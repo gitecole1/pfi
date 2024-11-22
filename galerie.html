@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -35,27 +35,36 @@
         footer{
             grid-area: footer ;
             background-color: blue;
-            padding: 2%;
         }
 
         .flex{
             display: flex;
            flex-wrap: wrap;
-           justify-content:space-around;
+           justify-content:space-between;
            gap:10px
            
         }
     
-         .flex img{
-            flex: calc(30% 10px);
-            max-width: calc(30% - 10%);
-            border-radius: 3%;
+        div.gallery img {
+             width: 100%;
+            height: auto;
         }
-        @media screen and (max-width: 600px){
-              .flex img{
-                flex: calc(40% 10px);
-                max-width: calc(40% - 10%);
-              }
+        div.gallery {
+         border: 1px solid #ccc;
+         float: left;
+          width: 20%;
+          background-color: aqua;
+          margin: 1%;
+        }
+        @media screen and (max-width: 400px){
+             
+              div.gallery {
+              border: 1px solid #ccc;
+              float: left;
+              width: 100%;
+              background-color: pink;
+              margin: 5%;
+            }
         }
         a{
             color: green;
@@ -64,70 +73,116 @@
        a:hover{
         color: blue;
        }
-       div.desc {
-                  padding: 5px;
-                text-align: center;
-       }
-     div .allo{
-        background-color: blue;
-        width: 20%;
-        text-align: center;
-     }
-     div .moi{
-        background-color: brown;
-              
-      width: 20%;
-       
-     }
+      
+    
+     div.desc {
+         padding: 1%;
+         text-align: center;
+         background-color: blue;
+        }
     
     </style>
 </head>
 <body>
     <div class="conteneur">
         <header> 
+            <div class="flex">
                <div class="conteneur">
                    <a href="">page1</a> 
-                 
-                  
                </div>
+
+               <div class="conteneur">
+                <a href="">page2</a> 
+            </div>
+
+            <div class="conteneur">
+                <a href="">page3</a> 
+            </div>
+
+            <div class="conteneur">
+                <a href="">page4</a> 
+            </div>
+
+            <div class="conteneur">
+                <a href="">page5</a> 
+            </div>
+
+            <div class="conteneur">
+                <a href="">page6</a> 
+            </div>
+
+            <div class="conteneur">
+                <a href="">page7</a> 
+            </div>
+            </div>
         </header>
 
         <main>
             <div class="flex">
-                   <div class="moi">
-                     <img src="images/-314.jpg" alt="Cinque Terre">  
-                      <div class="allo">texte</div>
+
+                  
+                    <div class="gallery">
+                        <img src="images/-314.jpg" alt="Cinque Terre">
+                      <div class="desc">Add a description of the image here</div>
+                    </div>
+                   
+                    <div class="gallery">
+                        <img src="images/-314.jpg" alt="Cinque Terre">
+                      <div class="desc">Add a description of the image here</div>
+                    </div>
+                   
+
+                    <div class="gallery">
+                        <img src="images/-314.jpg" alt="Cinque Terre">
+                      <div class="desc">Add a description of the image here</div>
+                    </div>
+                   
+
+                    <div class="gallery">
+                        <img src="images/-314.jpg" alt="Cinque Terre">
+                      <div class="desc"> here</div>
+                    </div>
+                   
+                     
+                    <div class="gallery">
+                        <img src="images/-314.jpg" alt="Cinque Terre">
+                      <div class="desc"> here</div>
                     </div>
 
-                    <img src="images/-314.jpg" alt="Cinque Terre">
-                    <img src="images/9d645a18043709fcf5894d30e2af4fc3.jpg" alt="" class="image">
-                  
+
+                    <div class="gallery">
+                        <img src="images/-314.jpg" alt="Cinque Terre">
+                      <div class="desc"> here</div>
+                    </div>
+
+
+                    <div class="gallery">
+                        <img src="images/-314.jpg" alt="Cinque Terre">
+                      <div class="desc"> here</div>
+                    </div>
+
+
+
+                    <div class="gallery">
+                        <img src="images/-314.jpg" alt="Cinque Terre">
+                      <div class="desc"> here</div>
+                    </div>
+
+                    <div class="gallery">
+                        <img src="images/-314.jpg" alt="Cinque Terre">
+                      <div class="desc">Add a description of the image here</div>
+                    </div>
+                   
                     
-                    <img src="images/101164601_o.jpg" alt="Cinque Terre">
-
-                    <img src="images/4.webp" alt="Cinque Terre">
-                       
-                    <img src="images/craciun-15500.jpg" alt="Cinque Terre">
-
-                    <img src="images/0d7906b30717701c9585c1db2de0a8be.gif" alt="Cinque Terre">
-
-                    <img src="images/bonne-journee_180.jpg" alt="Cinque Terre">
-                     
-                    <img src="images/cartes-de-voeux-gratuites-a-telecharger.jpg" alt="Cinque Terre">
-                    
-                    <img src="images/fresh-lime-falling-black-background_841229-15851.jpg" alt="Cinque Terre">
-            
-                    <img src="images/world-girl-2827505.webp" alt="Cinque Terre">
-
-                    <img src="images/stock-photo-create-visually-striking-background-generative-ai_925376-14702.avif" alt="Cinque Terre" class="image">
-
-                    <img src="images/azbirthdaywishes-8254.jpg" alt="Cinque Terre">
-               
-                    <img src="images/50d22e00d08a3a8747233b88c1811dda.jpg" alt="Cinque Terre">
             </div>
         </main>
 
-        <footer> sources</footer>
+        <footer> 
+            <p>sources <br>
+                <a href="">lmt</a>
+            </p>
+            <a href="">lmt</a>
+        </footer>
     </div>
 </body>
 </html>
