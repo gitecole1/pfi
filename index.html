@@ -11,15 +11,15 @@ body{
 .row {
   display: flex;
   flex-wrap: wrap;
-  padding: 0 4px;
+  padding: 4px;
   
   
 }
 .container{
     background-color: blue;
     border: 3px solid #ccc;
-    
-   width: 70%;
+    height: 400%;
+   width: 80%;
 }
 
 /* Create four equal columns that sits next to each other */
@@ -27,65 +27,153 @@ body{
   flex: 25%;
   max-width: 50%;
   padding:  1px;
+  padding-right: 8%;
  background-color:rgb(8, 152, 102);
+ padding-bottom: 20%;
+   h3,p{
+    margin-left: 19%;
+   }
+
+
+}
+
+div.gallery img {
+             width: 125%;
+            height: auto;
+           
+        }
+
+.flex1{
+    display: flex;
+    border: 2px solid rgba(25, 18, 219, 0.453);
+    height: 3%;
+    width: 85%;
+    margin-top: 15%;
+    color:yellow;
+    margin-left: 20%;
+    padding-left: 4%;
+    font-size:x-large;
 
 }
 
 .column2 {
   flex: 25%;
   max-width: 75%;
-  padding:  4px;
+ padding-right: 30%;
  background-color:white;
+ padding-bottom: 20%;
+}
+.bloc{
+    background-color: rgb(12, 142, 142);
+    border: 2px solid rgba(18, 219, 31, 0.626);
+    width: 196%;
+    height: 14%;
 }
 
-div.gallery img {
-             width: 100%;
-            height: auto;
-        }
-
-.flex{
-    display: flex;
-    border: 2px solid rgba(25, 18, 219, 0.453);
-    height: 3%;
-    margin-top: 15%;
-    color:yellow;
-    margin-left: 20%;
-    margin-right: 6%;
-    padding-left: 6%;
- font-size:x-large;
+.flex2{
+    border: 2px solid black;
+    height: 30%;
+    margin: 6%;
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 3%;
+    font-size: xx-large;
 }
 
-h3,p{
-    margin-left: 19%;
+
+.bloc2{
+    width: 196%;
+    height: 17%;
+    padding-top: 8%;
+    p{
+      margin-left: 6%;
+      margin-right: 7%;
+    }
 }
+
+.flex3{
+    border: 2px solid black;
+    height: 20%;
+    margin: 6%;
+    flex-wrap:wrap;
+    text-align: center;
+    font-size: x-large;
+}
+
+
+   .flex-container{
+     display :grid;
+     flex-wrap: wrap;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+    "aside    main    main   main"
+    "aside     main   main    main";
+   
+    background-color: blueviolet;
+    margin: 5%;
+   
+ }
+
+ main{
+    grid-area: main;
+    flex-wrap: wrap;
+    background-color: palegreen;
+   
+ }
+
+ aside{
+    grid-area: aside;
+    flex-wrap: wrap;
+    background-color:aqua;
+   
+    
+ }
+ 
+
+
 /* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 900px) {
   .column1 {
     flex: 25%;
     max-width: 50%;
     padding:  1px;
    
     background-color: rgba(72, 159, 26, 0.921);
-   
   }
-  .column2 {
-    flex: 25%;
-  max-width: 75%;
-  padding:  4px;
-  }
-  .flex{
+  .flex1{
     display: flex;
-    margin-right: 16%;
+    width: 69%;
     font-size: large;
      margin-right: 6%;
      border: 2px solid rgba(16, 216, 63, 0.407);
     color: rgb(197, 189, 29);
   }
+  div.gallery img {
+             width: 100%;
+            height: auto;
+        }
+
+    
+.column2 {
+  flex: 25%;
+  max-width: 75%;
+ padding-right: 32%;
+ background-color:white;
+ padding-bottom: 20%;
+}
+  .bloc{
+    background-color: aqua;
+    border: 2px solid rgba(18, 219, 31, 0.626);
+    width: 193%;
+    height: 12%;
+    
+}
+
 
 }
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   .column1 {
     flex: 200%;
     max-width: 240%;
@@ -93,15 +181,62 @@ h3,p{
     color: white;
     
   }
-
-  .column2 {
-    flex: 100%;
-    max-width: 220%;
-  }
-  .flex{
+  .flex1{
     border: 2px solid rgba(189, 219, 18, 0.692);
     color: rgb(223, 181, 12);
   }
+  div.gallery img {
+             width: 100%;
+            height: auto;
+        }
+
+        .column2 {
+    flex: 200%;
+    max-width: 240%;
+  }
+
+  .bloc{
+    border: 2px solid rgba(18, 219, 31, 0.626);
+    width: 145%;
+    height: 10%;
+}
+.flex3{
+    border: 2px solid black;
+    height: 15%;
+    margin: 3%;
+    flex-wrap:wrap;
+    text-align: center;
+    font-size: large;
+    width: 67%;
+}
+
+.bloc2{
+    width: 196%;
+    height: 20%;
+    padding-top: 4%;
+    p{
+      margin-left: 3%;
+      margin-right: 27%;
+    }
+}
+
+.flex-container{
+     display :grid;
+     flex-wrap: wrap;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+    "aside    main    main   main"
+    "aside     main   main    main";
+   
+    background-color: blueviolet;
+   width: 66%;
+   
+ }
+
+ .container{
+    faire une mise en forme ici
+    justify-content: space-between;
+ }
 }
 
 
@@ -116,7 +251,7 @@ h3,p{
                 <img src="images/-314.jpg" alt="Cinque Terre">
             </div>
 
-            <div class="flex">
+            <div class="flex1">
               profil
             </div>
                   <h3>address</h3>
@@ -134,37 +269,76 @@ h3,p{
                   <h3>ferm</h3>
                  <p>hfegehr</p>
 
-            <div class="flex">
-                competence
+            <div class="flex1">
+                competences 
             </div>
                  <p>hedfghhjh</p>
                  <p></p>
                  <p></p>
                  <p></p>
         
-             <div class="flex">
+             <div class="flex1">
                 loisir
             </div>
               <p>gefgewgjeg</p>
-              <p></p>
-              <p></p>
-              <p></p>
-            </div>
+              <p>jkkjnvfes;ogkroj5r</p>
+             
+        </div>
        
         
         <div class="column2">
-              <div class="bloc"> <h1> nom prenom</h1></div>
+            <div class="bloc"> 
+                <div class="flex2">
+                     nom prenom
+                </div>
+            </div>
+             
+            <div class="bloc2">
+               
+                 <p>horaire.html. Cette page contient une grille css qui représente votre horaire des cours d’automne 2024.  
+                  La grille doit être stylisée. Vous devez faire ressortir l’entête (jours de la semaine) ainsi que la première colonne 
+                  qui contient les plages horaires avec des styles css appropriés. 
+                  Chaque cellule de cours doit contenir les informations suivantes : 
+                 </p>
+               
+             
+                 <div class="flex3">
+                    experience
+                 </div>
 
-              <p></p>
+                 <div class="flex-container">
+                    <aside>
+                        <p>dates   <br>
+                           dete1</p>
+                        <p>dtes</p>
+                    </aside>
+                    <main>
+                        <h3>poste occupé</h3>
+                        <p> Chaque cellule de cours doit contenir les informations suivantes  </p> 
+                        <h3>poste occupé</h3>
+                        <p> Chaque cellule de cours doit contenir les informations suivantes  </p>
+                    </main>
+                  </div>
+                
+                 <div class="flex3">
+                    formation
+                 </div>
 
-              <h2>experience</h2>
+                 <div class="flex-container">
+                    <aside>
+                        <p>dates</p>
+                        <p>dtes</p>
+                    </aside>
+                    <main>
+                        <h3>poste occupé</h3>
+                        <p> Chaque cellule de cours doit contenir les informations suivantes  </p> 
+                        <h3>poste occupé</h3>
+                        <p> Chaque cellule de cours doit contenir les informations suivantes  </p>
+                    </main>
+                  </div>
+               
+            </div>
 
-
-
-
-
-
-              <h2>formation</h2>
         </div>
           
 
