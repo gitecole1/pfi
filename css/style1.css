@@ -32,7 +32,7 @@ body{
 
 div.gallery img {
              width: 125%;
-            height: auto;
+            border-radius: 20em;
            
         }
 
