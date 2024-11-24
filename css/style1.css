@@ -1,6 +1,6 @@
 
 body{
-    margin: 30%;
+    margin: 20%;
 }
 .row {
   display: flex;
@@ -55,6 +55,7 @@ div.gallery img {
   max-width: 75%;
  padding-right: 30%;
  background-color:white;
+ padding-bottom: 10%;
  
 }
 .bloc{
@@ -192,7 +193,7 @@ aside{
   font-size: x-large;
   }
   div.gallery img {
-             width: 100%;
+          
         }
 
         .column2 {
@@ -256,5 +257,6 @@ aside{
     }
 
  
+}
 }
 }
