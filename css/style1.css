@@ -1,93 +1,91 @@
 
 body{
-    margin: 15%;
+    margin: 30%;
 }
 .row {
   display: flex;
   flex-wrap: wrap;
-  padding: 4px;
+  padding: 1px;
+  background-color: red;
   
   
 }
 .container{
     background-color: blue;
     border: 3px solid #ccc;
-    height: 400%;
-   width: 80%;
+    height: 900%;
+   width: 100%;
 }
 
 .column1 {
-  flex: 25%;
-  max-width: 50%;
-  padding:  1px;
+  flex: 20%;
   padding-right: 8%;
  background-color:rgb(8, 152, 102);
- padding-bottom: 20%;
    h3,p{
     margin-left: 19%;
    }
+   
 
 
 }
 
 div.gallery img {
              width: 125%;
-            border-radius: 20em;
+            border-radius: 10em;
            
         }
 
 .flex1{
     display: flex;
     border: 2px solid rgba(25, 18, 219, 0.453);
-    height: 3%;
+    height: 1%;
     width: 85%;
-    margin-top: 15%;
+    margin-top: 18%;
     color:yellow;
     margin-left: 20%;
     padding-left: 4%;
     font-size:x-large;
+    text-wrap: 2%;
+    padding-bottom: 4px;
 
 }
 
 .column2 {
-  flex: 25%;
+  flex: 20%;
   max-width: 75%;
  padding-right: 30%;
  background-color:white;
- padding-bottom: 20%;
+ 
 }
 .bloc{
     background-color: rgb(12, 142, 142);
     border: 2px solid rgba(18, 219, 31, 0.626);
     width: 196%;
-    height: 14%;
 }
 
 .flex2{
     border: 2px solid black;
-    height: 30%;
     margin: 6%;
     text-align: center;
     padding-top: 2%;
-    padding-bottom: 3%;
-    font-size: xx-large;
+    font-size: x-large;
 }
 
 
 .bloc2{
     width: 196%;
-    height: 17%;
-    padding-top: 8%;
+    height: 8%;
+    padding-top: 10%;
     p{
       margin-left: 6%;
-      margin-right: 7%;
+      margin-right: 6%;
     }
 }
 
 .flex3{
     border: 2px solid black;
     height: 20%;
-    margin: 6%;
+    margin: 5%;
     flex-wrap:wrap;
     text-align: center;
     font-size: x-large;
@@ -120,7 +118,7 @@ div.gallery img {
     background-color:aqua;
    
     p{
-        padding-bottom: 60%;
+        padding-bottom: 200%;
     }
  }
  
@@ -129,20 +127,19 @@ div.gallery img {
     flex: 25%;
     max-width: 50%;
     padding:  1px;
+    padding-right: 18px;
    
-    background-color: rgba(72, 159, 26, 0.921);
   }
   .flex1{
     display: flex;
     width: 69%;
     font-size: large;
-     margin-right: 6%;
      border: 2px solid rgba(16, 216, 63, 0.407);
     color: rgb(197, 189, 29);
   }
   div.gallery img {
-             width: 100%;
-            height: auto;
+             width: 110%;
+          
         }
 
     
@@ -151,52 +148,70 @@ div.gallery img {
   max-width: 75%;
  padding-right: 32%;
  background-color:white;
- padding-bottom: 20%;
+ padding-bottom: 40%;
 }
   .bloc{
     background-color: aqua;
     border: 2px solid rgba(18, 219, 31, 0.626);
-    width: 193%;
-    height: 12%;
+    width: 200%;
+    height: 4%;
+  
     
 }
+.flex3{
+    border: 2px solid black;
+    height: 23%;
+    margin: 4%;
+    flex-wrap:wrap;
+    font-size:x-large;
+}
+aside{
+    grid-area: aside;
+    flex-wrap: wrap;
+    background-color:aqua;
+   
+    p{
+        padding-bottom: 389%;
+    }
 
 
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
   .column1 {
-    flex: 200%;
+    flex: 25%;
     max-width: 240%;
     background-color: rgb(20, 100, 157);
-    color: white;
+    padding-bottom: 20%;
     
   }
   .flex1{
     border: 2px solid rgba(189, 219, 18, 0.692);
     color: rgb(223, 181, 12);
+   height: 2%;
+  padding-top: 2%;
+  font-size: x-large;
   }
   div.gallery img {
              width: 100%;
-            height: auto;
         }
 
         .column2 {
-    flex: 200%;
-    max-width: 240%;
+    flex: 25%;
+    max-width: 220%;
   }
 
   .bloc{
     border: 2px solid rgba(18, 219, 31, 0.626);
-    width: 145%;
-    height: 10%;
+    width: 146%;
+    height: 5%;
 }
 .flex3{
     border: 2px solid black;
-    height: 15%;
+    height: 7%;
     margin: 3%;
     flex-wrap:wrap;
     text-align: center;
-    font-size: large;
+    font-size: x-large;
     width: 67%;
 }
 
@@ -231,7 +246,15 @@ div.gallery img {
     padding-bottom: 3%;
     font-size: x-large;
 }
+aside{
+    grid-area: aside;
+    flex-wrap: wrap;
+    background-color:aqua;
+   
+    p{
+        padding-bottom: 300%;
+    }
 
  
 }
-
+}
