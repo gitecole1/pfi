@@ -119,7 +119,9 @@ div.gallery img {
     flex-wrap: wrap;
     background-color:aqua;
    
-    
+    p{
+        padding-bottom: 60%;
+    }
  }
  
 @media screen and (max-width: 900px) {
