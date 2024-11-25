@@ -1,42 +1,37 @@
 
 body{
-    margin: 20%;
+  margin: 20%;
+  
 }
 .row {
   display: flex;
-  flex-wrap: wrap;
-  padding: 1px;
-  background-color: red;
-  
-  
+ 
 }
 .container{
-    background-color: blue;
-    border: 3px solid #ccc;
-    height: 900%;
-   width: 100%;
+   
+    border: 3px solid #151414;
 }
 
 .column1 {
-  flex: 20%;
-  padding-right: 8%;
+ padding-right: 10%;
  background-color:rgb(8, 152, 102);
    h3,p{
-    margin-left: 19%;
+    margin-left: 16%;
    }
-   
+
 
 
 }
 
-.gallery{
-    width: 100%;
-   height: 12%;
- margin: 12%;
- border-radius: 10em;
-    background-image: url(../images/-314.jpg);
-           
-        }
+.image{
+    width: 120%;
+   height:9%;
+   margin: 15%;
+  border-radius: 9em;
+   background-size:cover;
+   background-image: url(../images/-314.jpg);
+   
+ }
 
 .flex1{
     display: flex;
@@ -55,25 +50,19 @@ body{
 
 .column2 {
   flex: 20%;
- 
-  max-width: 75%;
- padding-right: 30%;
- background-color:white;
- padding-bottom: 10%;
- 
 }
 .bloc{
     background-color: rgb(12, 142, 142);
     border: 2px solid rgba(18, 219, 31, 0.626);
-    width: 196%;
+    width: 70%;
+    padding:8%;
 }
 
 .flex2{
     border: 2px solid black;
-    margin: 6%;
     text-align: center;
-    padding-top: 2%;
     font-size: x-large;
+    padding: 2%;
 }
 
 
@@ -82,8 +71,8 @@ body{
     height: 8%;
     padding-top: 10%;
     p{
-      margin-left: 6%;
-      margin-right: 6%;
+      margin-left: 4%;
+      margin-right: 12%;
     }
 }
 
@@ -91,6 +80,7 @@ body{
     border: 2px solid black;
     height: 20%;
     margin: 5%;
+    margin-right: 16%;
     flex-wrap:wrap;
     text-align: center;
     font-size: x-large;
@@ -98,13 +88,13 @@ body{
 .conteneur {
     display: flex;
     border: 2px solid red;
-     margin: 12%;
     flex-flow: row; /*nowrap*/
     /*
     flex-direction: row;            
     flex-wrap: wrap;  
     */            
     margin-left: 4%;
+    margin-right: 15%;
   
 }
 .item{
@@ -115,149 +105,12 @@ body{
 }
 .grille1 {
     display: grid;
-    gap: 16em;
+    gap: 17em;
 }
 
 .grille2 {
     display: grid;
     gap: 13em;
-  
+
 }
  
-@media screen and (max-width: 900px) {
-  .column1 {
-    flex: 25%;
-    max-width: 50%;
-    padding:  1px;
-    padding-right: 18px;
-   
-  }
-  .flex1{
-    display: flex;
-    width: 69%;
-    font-size: large;
-     border: 2px solid rgba(16, 216, 63, 0.407);
-    color: rgb(197, 189, 29);
-  }
-  div.gallery img {
-             width: 110%;
-          
-        }
-
-    
-.column2 {
-  flex: 25%;
-  max-width: 75%;
- padding-right: 32%;
- background-color:white;
- padding-bottom: 40%;
-}
-  .bloc{
-    background-color: aqua;
-    border: 2px solid rgba(18, 219, 31, 0.626);
-    width: 200%;
-    height: 4%;
-  
-    
-}
-.flex3{
-    border: 2px solid black;
-    height: 23%;
-    margin: 4%;
-    flex-wrap:wrap;
-    font-size:x-large;
-}
-aside{
-    grid-area: aside;
-    flex-wrap: wrap;
-    background-color:aqua;
-   
-    p{
-        padding-bottom: 389%;
-    }
-
-
-}
-@media screen and (max-width: 800px) {
-  .column1 {
-    flex: 25%;
-    max-width: 240%;
-    background-color: rgb(20, 100, 157);
-    padding-bottom: 20%;
-    
-  }
-  .flex1{
-    border: 2px solid rgba(189, 219, 18, 0.692);
-    color: rgb(223, 181, 12);
-   height: 2%;
-  padding-top: 2%;
-  font-size: x-large;
-  }
-  div.gallery img {
-          
-        }
-
-        .column2 {
-    flex: 25%;
-    max-width: 220%;
-  }
-
-  .bloc{
-    border: 2px solid rgba(18, 219, 31, 0.626);
-    width: 146%;
-    height: 5%;
-}
-.flex3{
-    border: 2px solid black;
-    height: 7%;
-    margin: 3%;
-    flex-wrap:wrap;
-    text-align: center;
-    font-size: x-large;
-    width: 67%;
-}
-
-.bloc2{
-    width: 196%;
-    height: 20%;
-    padding-top: 4%;
-    p{
-      margin-left: 3%;
-      margin-right: 27%;
-    }
-}
-
-.flex-container{
-     display :grid;
-     flex-wrap: wrap;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-areas:
-    "aside    main    main   main"
-    "aside     main   main    main";
-   
-    background-color: blueviolet;
-   width: 66%;
-   
- }
- .flex2{
-    border: 2px solid black;
-    height: 30%;
-    margin: 6%;
-    text-align: center;
-    padding-top: 2%;
-    padding-bottom: 3%;
-    font-size: x-large;
-}
-aside{
-    grid-area: aside;
-    flex-wrap: wrap;
-    background-color:aqua;
-   
-    p{
-        padding-bottom: 300%;
-    }
-
- 
-}
-}
-}
