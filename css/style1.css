@@ -19,8 +19,12 @@ body{
   
 }
 
-h3,p{
+h3{
     margin-left: 16%;
+   }
+
+   .column1>p{
+         margin-left: 16%;
    }
 
 .image{
