@@ -4,14 +4,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Table horaire</title>
+    <style>
+
+              
+    
+    .grille {
+        background-color: grey;
+        display: grid;
+        grid-template-rows: 80px 80px 80px;
+        grid-template-columns: 1fr 1fr 1fr;                
+        grid-template-areas:
+            ". . ."
+            ". v ."
+            ". . .";
+        
+        /*
+        grid-template-areas:
+            "b v v"
+            "j v v"
+            "o o r";
+        */        
+    }
+    .cellule {        
+        align-self: center;
+        justify-self: center;
+        border-radius: 16px;
+        width: 100%;
+        height: 100%;
+    }
+    .rouge {
+        background-color: red;
+        /* grid-area: r; */
+    }
+    .bleu {
+        background-color: blue;
+        /* grid-area: b; */
+    }
+    .vert {
+        background-color: green;
+        grid-area: v;
+    }
+    .jaune {
+        background-color: yellow;
+        /* grid-area: j; */ 
+    }
+    .orange {
+        background-color: orange;
+        /* grid-area: o; */
+    }
+    img {        
+        border-radius: 16px;
+        margin: auto;
+        display: block;
+        max-height: 100%;
+        max-width: 100%;
+    }
+
+
+
+    </style>
 </head>
 <body>
     
 
 
-
-
+       
+    <div class="grille">
+        <div class="cellule rouge"></div>
+        <div class="cellule bleu"></div>
+        <div class="cellule vert"></div>
+        <div class="cellule jaune"></div>
+        <div class="cellule orange"></div>
+    </div>    
 
 
 
