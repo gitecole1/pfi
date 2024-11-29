@@ -43,7 +43,7 @@ h3,p{
     margin-left: 20%;
     padding-left: 4%;
     font-size:x-large;
-    text-wrap: 2%;
+    text-wrap:wrap;
     padding-bottom: 4px;
 
 }
@@ -75,6 +75,10 @@ h3,p{
       margin-right: 14%;
     }
 }
+p{
+    margin-left: 4%;
+    margin-right: 14%;
+  }
 
 .flex3{
     border: 2px solid black;
