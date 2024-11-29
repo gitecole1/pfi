@@ -29,8 +29,8 @@ h3{
    }
 
 .image{
-    width: 105%;
-   height:7%;
+    width: 100%;
+   height:9%;
    margin: 15%;
   border-radius: 9em;
    background-size:cover;
@@ -91,6 +91,7 @@ p{
     flex-wrap:wrap;
     text-align: center;
     font-size: x-large;
+    margin-bottom: 3%;
 }
 .conteneur {
     display: flex;
@@ -109,6 +110,7 @@ p{
 
 
 .item1{
+    
     border: 1px solid black;
     background-color: grey;
   
@@ -196,7 +198,7 @@ p{
     
        .column1>p{
             
-        
+            margin-right: 10%;
              margin-left: 8%;
        }
       .flex1{
