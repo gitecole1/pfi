@@ -10,22 +10,22 @@ body{
 .container{
    
     border: 3px solid #151414;
+    padding-bottom: 3%;
 }
 
 .column1 {
  padding-right: 10%;
  background-color:rgb(8, 152, 102);
-   h3,p{
+  
+}
+
+h3,p{
     margin-left: 16%;
    }
 
-
-
-}
-
 .image{
-    width: 120%;
-   height:9%;
+    width: 105%;
+   height:7%;
    margin: 15%;
   border-radius: 9em;
    background-size:cover;
@@ -37,7 +37,7 @@ body{
     display: flex;
     border: 2px solid rgba(25, 18, 219, 0.453);
     height: 1%;
-    width: 85%;
+    width: 97%;
     margin-top: 18%;
     color:yellow;
     margin-left: 20%;
@@ -54,7 +54,7 @@ body{
 .bloc{
     background-color: rgb(12, 142, 142);
     border: 2px solid rgba(18, 219, 31, 0.626);
-    width: 70%;
+    width: 83%;
     padding:8%;
 }
 
@@ -67,12 +67,12 @@ body{
 
 
 .bloc2{
-    width: 196%;
+    width: 114%;
     height: 8%;
     padding-top: 10%;
     p{
       margin-left: 4%;
-      margin-right: 12%;
+      margin-right: 14%;
     }
 }
 
@@ -88,11 +88,7 @@ body{
 .conteneur {
     display: flex;
     border: 2px solid red;
-    flex-flow: row; /*nowrap*/
-    /*
-    flex-direction: row;            
-    flex-wrap: wrap;  
-    */            
+    flex-flow: row; 
     margin-left: 4%;
     margin-right: 15%;
   
@@ -113,4 +109,53 @@ body{
     gap: 13em;
 
 }
- 
+/* 
+@media screen and (max-width: 700px){
+    .column1 {
+        flex: 25%;
+        max-width: 50%;
+        padding:  1px;
+        padding-right: 18px;
+       
+      }
+      .flex1{
+        display: flex;
+        width: 69%;
+        font-size: large;
+         border: 2px solid rgba(16, 216, 63, 0.407);
+        color: rgb(197, 189, 29);
+      }
+      div.gallery img {
+                 width: 110%;
+              
+            }
+    
+        
+    .column2 {
+      flex: 25%;
+      max-width: 75%;
+     padding-right: 32%;
+     background-color:white;
+     padding-bottom: 40%;
+    }
+      .bloc{
+        background-color: aqua;
+        border: 2px solid rgba(18, 219, 31, 0.626);
+        width: 200%;
+        height: 4%;
+      
+        
+    }
+    .flex3{
+        border: 2px solid black;
+        height: 23%;
+        margin: 4%;
+        flex-wrap:wrap;
+        font-size:x-large;
+    }
+    aside{
+        grid-area: aside;
+        flex-wrap: wrap;
+        background-color:aqua;
+    }
+}
