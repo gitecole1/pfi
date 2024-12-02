@@ -6,91 +6,324 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Table horaire</title>
     <style>
+       .grid-container {
+  display: grid;
+  grid-template-columns: 6% auto auto auto auto ;
+  border: 2px solid black;
+  margin:1%;
+}
+
+.grid-container > div {
+  text-align: center;
+  font-size: 20px;
+  border: 1px solid black;
+  text-align: left;
+}
+
+.item1 {
+  grid-column-start: 1;
+  grid-column-end: 7;
+
+  
+}
+.item2{
+    background-color: rgba(81, 16, 178, 0.57);
+   
+}
+
+
+.item3{
+    background-color: rgba(179, 6, 107, 0.474);
+}
+
+.item4{
+    background-color: rgba(8, 122, 19, 0.645);
+}
+
+.item5{
+    background-color: rgba(8, 149, 188, 0.645);
+}
+
+.item6{
+    background-color: rgba(123, 138, 8, 0.645);
+}
+
+.item7{
+    background-color: rgba(232, 8, 8, 0.645);
+}
+
 
               
-    
-    .grille {
-        background-color: grey;
-        display: grid;
-        grid-template-rows: 80px 80px 80px;
-        grid-template-columns: 1fr 1fr 1fr;                
-        grid-template-areas:
-            ". . ."
-            ". v ."
-            ". . .";
-        
-        /*
-        grid-template-areas:
-            "b v v"
-            "j v v"
-            "o o r";
-        */        
-    }
-    .cellule {        
-        align-self: center;
-        justify-self: center;
-        border-radius: 16px;
-        width: 100%;
-        height: 100%;
-    }
-    .rouge {
-       
-        /* grid-area: r; */
-    }
-    .bleu {
-       
-        /* grid-area: b; */
-    }
-    .vert {
-        
-        grid-area: v;
-    }
-    .jaune {
-       
-        /* grid-area: j; */ 
-    }
-    .orange {
-       
-        /* grid-area: o; */
-    }
-    img {        
-        border-radius: 16px;
-        margin: auto;
-        display: block;
-        max-height: 100%;
-        max-width: 100%;
-    }
-   
-
-
-    </style>
+   </style>
 </head>
 <body>
+    <div class="grid-container">
+      <div class="item1">1</div>
+    </div>
     
+    <div class="grid-container">
+        
+        <div class="item1">Horaire</div>
+        <div class="item"></div>
+        <div class="item">Lundi</div>  
+        <div class="item">Mardi</div>
+        <div class="item">Mercredi</div>
+        <div class="item">Jeudi</div>  
+        <div class="item"> Vendredi</div>
+        <div class="item">
+             <p>08:00</p>
+            <p>08:50</p>
+        </div>  
+      
 
-
+        <div class="item2">
+            <div class="itali"> 201KB1LG</div>
+            <P>mathématique</P>
+            <p>J.LORTIE</p>
+            <P>COL-D218</P>
+        </div>
+        <div class="item"></div>
+        <div class="item">
+                <div class="itali"> 420KB1LG</div>
+                <P>Itro prog</P>
+                <p>BOILEAU F</p>
+                <P>PCO-P112</P>
+         
+        </div>
+        <div class="item4">
+            <div class="itali"> 420KB1LG</div>
+            <P>exploitation </P>
+            <P> A.ADRE-LES</P>
+            <P>COL-P112</P>
+        </div>
+        <div class="item5">
+            <div class="itali"> 601102MQ</div>
+            <P>Litt & imaginaire</P>
+            <p>J. MYRE</p>
+            <P>COL-D211</P>
+        </div>  
+        <div class="item">
+            08:55
+            09:45
+        </div>
+        <div class="item2">
+            <div class="itali"> 201KB1LG</div>
+            <P>mathématique</P>
+            <p>J.LORTIE</p>
+            <P>COL-D218</P>
+        </div>
+        <div class="item"></div>  
+        <div class="item3">
+            <div class="itali"> 420KB1LG</div>
+            <P>Itro prog</P>
+            <p>BOILEAU F</p>
+            <P>PCO-P112</P>
+     
+        </div>
+        <div class="item4">
+            <div class="itali"> 420KB1LG</div>
+            <P>exploitation </P>
+               <P> A.ADRE-LES</P>
+            <P>COL-P112</P>
+        </div>  
+        <div class="item5">
+            <div class="itali"> 601102MQ</div>
+            <P>Litt & imaginaire</P>
+            <p>J. MYRE</p>
+            <P>COL-D211</P>
+        </div>
+        <div class="item">
+            09:50
+            10:40
+        </div>
+        <div class="item"></div>  
        
-    <div class="grille">
-        <div class="cellule rouge">1</div>
-        <div class="cellule bleu">2</div>
-        <div class="cellule vert">3</div>
-        <div class="cellule jaune">4</div>
-        <div class="cellule orange">5 </div>
-    </div>    
+        <div class="item2">
+            <div class="itali"> 201KB1LG</div>
+            <P>mathématique</P>
+            <p>J.LORTIE</p>
+            <P>COL-D218</P>
+        </div>
+        <div class="item5">
+            <div class="itali"> 601102MQ</div>
+            <P>Litt & imaginaire</P>
+            <p>J. MYRE</p>
+            <P>COL-D115</P>
+     
+        </div>  
 
+        <div class="item"></div>
+        <div class="item6">
+            <div class="itali"> 420KB2LG</div>
+            <P>Concep web</P>
+            <p>J. BEAUBIEN</p>
+            <P>PCO-P112</P>
+        </div>
+        <div class="item">
+            10:45
+            11:35
+        </div>  
+       
+        <div class="item"></div>
+        <div class="item"></div>  
+        <div class="item5">
+            <div class="itali"> 601102MQ</div>
+            <P>Litt & imaginaire</P>
+            <p>J. MYRE</p>
+            <P>COL-D115</P>
+        </div>
+        <div class="item"></div>
+        <div class="item6"> 
+            <div class="itali"> 420KB2LG</div>
+            <P>Concep web</P>
+            <p>J. BEAUBIEN</p>
+            <P>PCO-P112</P></div>  
 
-
-
-
-
-
-
-
-
-
-
-
-    
+        
+        <div class="item"> 
+            11:40
+            12:30
+        </div>
+        <div class="item"></div>  
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>  
+        <div class="item6">
+            <div class="itali"> 420KB2LG</div>
+            <P>Concep web</P>
+            <p>J. BEAUBIEN</p>
+            <P>PCO-P112</P>
+        </div>
+        <div class="item">
+            12:35
+            13:25
+        </div>  
+ 
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>  
+        
+        <div class="item3">
+            <div class="itali"> 420KB1LG</div>
+                <P>Itro prog</P>
+                <p>BOILEAU F</p>
+                <P>PCO-P112</P>
+        </div>
+        <div class="item"></div>  
+        <div class="item">
+            13:30
+            14:20
+        </div>
+        <div class="item3">
+            <div class="itali"> 420KB1LG</div>
+            <P>Itro prog</P>
+            <p>BOILEAU F</p>
+            <P>PCO-D112</P>
+        </div>
+        <div class="item4">
+            <div class="itali"> 420KB1LG</div>
+            <P>exploitation </P>
+               <P> A.ADRE-LES</P>
+            <P>COL-D112</P>
+        </div> 
+        <div class="item"></div>
+        <div class="item3">
+            <div class="itali"> 420KB1LG</div>
+                <P>Itro prog</P>
+                <p>BOILEAU F</p>
+                <P>PCO-P112</P>
+        </div>
+        <div class="item"></div>  
+        <div class="item">
+            14:25
+            15:15
+        </div>
+        <div class="item3">
+            <div class="itali"> 420KB1LG</div>
+            <P>Itro prog</P>
+            <p>BOILEAU F</p>
+            <P>PCO-D112</P>
+        </div>
+        <div class="item4">
+            <div class="itali"> 420KB1LG</div>
+            <P>exploitation </P>
+               <P> A.ADRE-LES</P>
+            <P>COL-P112</P>
+        </div>    
+        <div class="item">63 </div>
+        <div class="item2">
+            <div class="itali"> 201KB1LG</div>
+            <P>mathématique</P>
+            <p>J.LORTIE</p>
+            <P>PCO-P087</P>
+        </div>
+        <div class="item3">
+            <div class="itali"> 420KB1LG</div>
+            <P>Itro prog</P>
+            <p>BOILEAU F</p>
+            <P>PCO-P112</P>
+        </div>
+        <div class="item">
+            15:20
+            16:10
+        </div>
+        <div class="item">66</div>  
+       
+        <div class="item4">
+            <div class="itali"> 420KB1LG</div>
+            <P>exploitation </P>
+               <P> A.ADRE-LES</P>
+            <P>COL-D112</P>
+        </div>
+        <div class="item7">
+            <div class="itali"> 340102MQ</div>
+            <P>L'Être humain</P>
+            <p>BARBARA G</p>
+            <P>PCO-PO84</P>
+     
+        </div>
+        <div class="item2">
+            <div class="itali"> 201KB1LG</div>
+            <P>mathématique</P>
+            <p>J.LORTIE</p>
+            <P>PCO-P087</P>
+        </div>
+        <div class="item3">
+            <div class="itali"> 420KB1LG</div>
+            <P>Itro prog</P>
+            <p>BOILEAU F</p>
+            <P>PCO-P112</P>
+        </div>  
+        <div class="item">
+            16:15
+            17:05
+        </div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item7">
+            <div class="itali"> 340102MQ</div>
+            <P>L'Être humain</P>
+            <p>BARBARA G</p>
+            <P>PCO-PO84</P>
+        </div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item">
+            17:10
+            18:00
+        </div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item7">
+            <div class="itali"> 340102MQ</div>
+            <P>L'Être humain</P>
+            <p>BARBARA G</p>
+            <P>PCO-PO84</P>
+        </div>
+        <div class="item"></div>
+        <div class="item"></div>
+       </div>
+       <p> le cour qui m'a le plus marqué est exploitation</p>
 </body>
 </html>
 
