@@ -1,4 +1,68 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sujet</title>
+    <style>
+        .container{
+            display:grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-areas: 
+            " header header  header"
+            "main main aside"
+            "footer footer footer"
+            ;
+            gap:10%;
+        }
+
+        header{
+              grid-area: header;
+              padding: 10%;
+              background-image: url(images/adobestock_84405047_2.jpeg);
+        }
+
+        main{
+            grid-area: main;
+            background-color: rgb(44, 184, 156);
+        }
+
+        aside{
+            grid-area: aside;
+            background-color: brown;
+        }
+
+        footer{
+            grid-area: footer;
+            background-color: chartreuse;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <header>
+            header
+            <p></p>
+            <p></p>
+            <p></p>
+        </header>
+        <aside>
+            aside
+        </aside>
+        <main>
+            main
+        </main>
+
+    <footer>
+        footer
+    </footer>
+    </div>
+</body>
+</html>
+
+
 
 
 

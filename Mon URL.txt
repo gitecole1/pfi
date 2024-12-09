@@ -26,3 +26,9 @@ consultant:https://emplois.ca.indeed.com/conseils-carriere/developpement-carrier
 
 
 informatique:https://www.guichetemplois.gc.ca/rapportmarche/profession/3954/ca
+
+
+
+
+
+pour cette page dans sujet.html : https://www.france-tampon.fr/165-tampon-encreur-a-personnaliser-pour-les-medecins
