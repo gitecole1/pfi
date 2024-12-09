@@ -8,35 +8,70 @@
     <style>
         .container{
             display:grid;
-            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr;
             grid-template-areas: 
             " header header  header"
-            "main main aside"
+            "main main main"
             "footer footer footer"
             ;
-            gap:20%;
         }
 
         header{
               grid-area: header;
-              padding: 10%;
+              padding: 15%;
               background-image: url(images/adobestock_84405047_2.jpeg);
         }
 
         main{
             grid-area: main;
-            background-color: rgb(44, 184, 156);
-        }
-
-        aside{
-            grid-area: aside;
-            background-color: brown;
+            padding-left: 15%;
+            padding-right: 15%;
+           
         }
 
         footer{
             grid-area: footer;
-            background-color: chartreuse;
+            padding-left: 15%;
+            
         }
+        a{
+            color: rgb(66, 210, 27);
+            text-decoration: none;
+        }
+       a:hover{
+        color: blue;
+       }
+
+       h2{
+        text-align: center;
+       }
+
+       ul{
+        padding-left: 6%;
+       }
+
+       @media screen and (max-width: 400px){
+        a{
+            color:rgba(241, 25, 36, 0.955);
+            text-decoration: none;
+        }
+       a:hover{
+        color: blue;
+       }  
+       main{
+            grid-area: main;
+            padding-left: 10%;
+            padding-right: 10%;
+           
+        } 
+        header{
+              grid-area: header;
+              padding: 10%;
+              background-image: url(images/adobestock_84405047_2.jpeg);
+        } 
+             
+           }
+       
     </style>
 </head>
 <body>
@@ -44,19 +79,83 @@
 
         <header>
             header
-            <p></p>
+            <p> Sujet qui m'interesse: </p>
+            <p>Le métier de médecin</p>
             <p></p>
             <p></p>
         </header>
-        <aside>
-            aside
-        </aside>
+        
         <main>
-            main
+            <p>
+                Professionnel de la santé, le médecin reçoit des patients, les examine, 
+               établit un diagnostic et prescrit un traitement. Il suit également ses patients 
+               et les accompagne dans la gestion de leur santé. Les médecins se divisent en deux grandes catégories,
+               les médecins généralistes et les médecins spécialistes. Certes, le grand public connait déjà les grandes lignes du métier de médecin,
+               mais certains aspects de cette fonction doivent être présentés pour ceux qui projettent de faire carrière.
+            </p>
+
+            <h2>Le matériel indispensable pour un médecin</h2>
+
+            <p>
+                Stéthoscopes, tensiomètres, thermomètres et consorts, 
+               nous connaissons déjà les dispositifs habituels du médecin. 
+               Cependant, ce métier ne se résume pas aux équipements purement médicaux. 
+               L'administratif occupe également une part importante du quotidien du médecin. 
+               La délivrance des ordonnances médicales est sans doute le plus important aux yeux des patients.
+            </p>
+
+            <p>
+                Outre les fournitures de bureaux usuels, le médecin doit disposer de bloc d'ordonnances et 
+               de tampons personnalisés en permanence. Pour s'approvisionner, ils peuvent compter sur des plateformes spécialisées,
+               à l'instar de <a href="https://www.france-tampon.fr/165-tampon-encreur-a-personnaliser-pour-les-medecins">cette page</a> 
+               qui conçoit des tampons de qualité professionnelle et sur mesure. Les médecins en libéral 
+               et ceux qui reçoivent à domicile ou dans leurs propres cabinets doivent également penser à investir dans du mobilier 
+               et des appareils avancés, surtout s'ils sont spécialistes.
+            </p>
+
+            <h2>Le niveau d'études nécessaire pour devenir médecin</h2>
+
+            <p>
+                Pour devenir médecin généraliste, vous devez réaliser 9 ans d'études universitaires et pour devenir médecin spécialiste, 
+               il faut étudier la médecine pendant 10 à 12 années d'études supérieures. Le cursus débouche sur le diplôme de docteur en médecine, 
+               qui se trouve être un diplôme d,état obligatoire pour exercer.
+            </p>
+            
+            <h2>Le parcours pour devenir médecin</h2>
+            <p>
+                Pour accéder aux études de médecine, les lycéens doivent passer par deux parcours : le parcours d'accès spécifique santé (PASS) ou la licence avec option accès santé (LAS). Lors du 1er cycle, 
+               les apprenants assimilent les bases du médical, c'est-à-dire l'anatomie, la physiologie, la microbiologie et des notions de pharmacologie entre autres. 
+               Au minimum, deux stages sont prévus pendant ce cycle assorti du diplôme de formation générale en sciences médicales (DFGSM) assimilable à la licence.
+            </p>
+            <p>
+                Le 2d cycle, également appelé externat (4e à la 6e année), consiste à réaliser un approfondissement et une pratique clinique. 
+               C'est pendant cette période que les apprenants complètement leur formation. La pratique clinique occupe une part importante de la formation. 
+               Au moins 25 gardes, principalement aux urgences, sont à réaliser sur ces trois années. Ce cycle débouche sur le diplôme de formation approfondie en sciences médicales (DFASM), 
+               reconnu au niveau master.
+            </p>
+            <p>
+                Lors du 3e cycle ou internat, les apprenants effectuent des stages semestriels parallèlement à des formations théoriques. 
+               Ils intègrent les équipes médicales et sont supervisés par des médecins expérimentés jusqu'à ce qu'ils deviennent autonomes. 
+               Pour les médecins généralistes, l'internat dure 3 ans, pour les spécialistes, elle dure 4 à 6 ans. À la fin de ce cycle, 
+               les internes obtiennent le diplôme d'État de docteur en médecine et le diplôme d'étude spécialisées (DES) pour les spécialistes.
+            </p>
+
+            <h2>Les spécialités en médecine</h2>
+            <p>
+                À ce jour, il existe 44 spécialités en médecine. Elles se répartissent comme suit :
+            </p>
+             <ul>
+                <li>30 spécialités médicales : pneumologie, neurologie, psychiatrie, cardiologie, dermatologie.</li>
+                <li>13 spécialités chirurgicales : chirurgie pédiatrique, chirurgie vasculaire, chirurgie esthétique, chirurgie obstétrique, neurochirurgie.</li>
+             </ul>
+             <p>
+                À ces spécialités s'ajoute également la biologie médicale.
+            </p>
         </main>
 
     <footer>
-        footer
+        <p>SOURCES:</p>
+        <a href="https://www.letudiant.fr/college.html" target="_blank">L'ETUDIANT</a>
     </footer>
     </div>
 </body>
