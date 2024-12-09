@@ -8,9 +8,9 @@
     <style>
         .container{
             display:grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 1fr 1fr 0.2fr;
             grid-template-areas: 
-            " header header  header"
+            " header header  nav"
             "main main main"
             "footer footer footer"
             ;
@@ -19,13 +19,13 @@
         header{
               grid-area: header;
               padding: 15%;
-              text-align: center;
-                font-size: xx-large;
-                color:white;
-                opacity: 0.8;
-              background-image: url(images/OIP.jpg);
+              background-image: url(images/adobestock_84405047_2.jpeg);
         }
-      
+
+        nav{
+            grid-area: nav;
+            background-color: black;
+        }
 
         main{
             grid-area: main;
@@ -40,7 +40,7 @@
             
         }
         a{
-            color: rgb(66, 210, 27);
+            color: green;
             text-decoration: none;
         }
        a:hover{
@@ -55,27 +55,31 @@
         padding-left: 6%;
        }
 
-       @media screen and (max-width: 400px){
-        a{
-            color:rgba(241, 25, 36, 0.955);
+        .source a{
+            color: white;
             text-decoration: none;
         }
-       a:hover{
-        color: blue;
-       }  
-       main{
-            grid-area: main;
-            padding-left: 10%;
-            padding-right: 10%;
-           
-        } 
-        header{
-              grid-area: header;
-              padding: 10%;
-              background-image: url(images/adobestock_84405047_2.jpeg);
-             
-             
-           }
+
+       @media screen and (max-width: 400px){
+    a{
+        color:rgba(241, 25, 36, 0.955);
+        text-decoration: none;
+    }
+   a:hover{
+    color: blue;
+   }  
+   main{
+        grid-area: main;
+        padding-left: 10%;
+        padding-right: 10%;
+       
+    } 
+    header{
+          grid-area: header;
+          padding: 10%;
+          background-image: url(images/adobestock_84405047_2.jpeg);
+       }
+    }
        
     </style>
 </head>
@@ -83,12 +87,27 @@
     <div class="container">
 
         <header>
-           
+            header
             <p> Sujet qui m'interesse: </p>
-            <h1>Le métier de médecin</h1>
-           
+            <p>Le métier de médecin</p>
         </header>
         
+        <nav>
+            <div class="sources">
+               
+                <a href="horaire.html">horaire</a> 
+              
+                 <a href="index.html">Acceuil</a> 
+             
+                 <a href="kb2plus.html">Kb2</a> 
+             
+                 <a href="professions.html">Professions</a> 
+        
+                 <a href="sources.html">Sources</a> 
+        
+                 <a href="sujet.html">Sujet</a> 
+             </div>  
+        </nav>
         <main>
             <p>
                 Professionnel de la santé, le médecin reçoit des patients, les examine, 

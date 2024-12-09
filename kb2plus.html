@@ -1,11 +1,74 @@
+<style>
+    .container{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        " header header  header"
+        "main main main"
+        "footer footer footer"
+        ;
+    }
 
+    header{
+          grid-area: header;
+          padding: 15%;
+          text-align: center;
+            font-size: xx-large;
+            color:white;
+            opacity: 0.8;
+          background-image: url(images/OIP.jpg);
+    }
+  
 
+    main{
+        grid-area: main;
+        padding-left: 15%;
+        padding-right: 15%;
+       
+    }
 
+    footer{
+        grid-area: footer;
+        padding-left: 15%;
+        
+    }
+    a{
+        color: rgb(66, 210, 27);
+        text-decoration: none;
+    }
+   a:hover{
+    color: blue;
+   }
 
+   h2{
+    text-align: center;
+   }
 
+   ul{
+    padding-left: 6%;
+   }
 
-
-
+   @media screen and (max-width: 400px){
+    a{
+        color:rgba(241, 25, 36, 0.955);
+        text-decoration: none;
+    }
+   a:hover{
+    color: blue;
+   }  
+   main{
+        grid-area: main;
+        padding-left: 10%;
+        padding-right: 10%;
+       
+    } 
+    header{
+          grid-area: header;
+          padding: 10%;
+          background-image: url(images/adobestock_84405047_2.jpeg);
+       }
+    }
+</style>
 
 
 
