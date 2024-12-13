@@ -1,6 +1,6 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,16 +8,17 @@
     <style>
          .grid-container {
   display: grid;
-  grid-template-columns: auto auto ;
+  grid-template-columns: 40% auto ;
   background-color: #2196F3;
-  padding: 10px;
+  ;
 }
 .grid-item {
   background-color: rgba(255, 255, 255, 0.8);
   border: 1px solid rgba(0, 0, 0, 0.8);
-  padding: 20px;
+ text-align: center;
   font-size: 30px;
-  text-align: center;
+  
+ 
 }
 .grid-item1{
     grid-column-start: 1;
@@ -31,7 +32,7 @@
             display: flex;
            flex-wrap: wrap;
            justify-content: space-evenly;
-           
+           font-size: large;
         }
         a{
             color: green;
@@ -40,6 +41,41 @@
        a:hover{
         color: blue;
        }
+    .grid-item img {
+     width: 70%;
+    height: auto;
+}
+
+@media screen and (max-width: 100px){
+     
+    .grid-container {
+  display: grid;
+  grid-template-columns: 50% auto ;
+ 
+}
+.grid-item {
+  border: 1px solid rgba(0, 0, 0, 0.8);
+ text-align: center;
+  font-size: 15px;
+  
+}
+}
+
+
+.grid-item img {
+     width: 100%;
+    height: auto;
+}
+
+a{
+   color: rgb(24, 130, 201);
+   text-decoration: none;
+}
+a:hover{
+color: blue;
+}
+
+
            
     </style>
 </head>
@@ -64,7 +100,7 @@
              </div>
  
              <div class="conteneur">
-                 <a href="sources.html">Sources</a> 
+                 <a href="galerie.html">Galerie</a> 
              </div>
  
              <div class="conteneur">
@@ -78,40 +114,52 @@
             <h3>SOURCES DES IMAGES</h3>
         </div>
         <div class="grid-item">
-            <img src="images/OIP (4).jpg" alt="">
+            <img src="images/medicament.jpg" alt="photo de medicament">
         </div>
         <div class="grid-item">
-            <a href="https://www.bing.com/images/search?view=detailV2&ccid=7NSk2FIL&id=42108DE5D836640D256C6375BFC55D2C1316AA61&thid=OIP.7NSk2FIL4R47sqw41_yYewHaE8&mediaurl=https%3A%2F%2Fdum-a-zahrada.biginzerce.cz%2Fimages%2Finzeraty%2Fbig%2F120181109103917.jpeg&cdnurl=https%3A%2F%2Fth.bing.com%2Fth%2Fid%2FR.ecd4a4d8520be11e3bb2ac38d7fc987b%3Frik%3DYaoWEyxdxb91Yw%26pid%3DImgRaw%26r%3D0&exph=467&expw=700&q=Anxiolytiques&simid=607988574881667278&form=IRPRST&ck=322658677675948612E3539B26D6789E&selectedindex=0&itb=0&ajaxhist=0&ajaxserp=0&pivotparams=insightsToken%3Dccid_VGrF2zM6*cp_C19BC4994A7B6875695785CDC8BE2776*mid_19B64123571C8B183B13A076C7F76036ED9317A9*simid_607996653655707767*thid_OIP.VGrF2zM69TGVD-HJa53vEgHaD4&vt=0&sim=11&iss=VSI&ajaxhist=0&ajaxserp=0"></a>
+            <a href="https://www.bing.com/images/search?view=detailV2&ccid=7NSk2FIL&id=42108DE5D836640D256C6375BFC55D2C1316AA61&thid=OIP.7NSk2FIL4R47sqw41_yYewHaE8&mediaurl=https%3A%2F%2Fdum-a-zahrada.biginzerce.cz%2Fimages%2Finzeraty%2Fbig%2F120181109103917.jpeg&cdnurl=https%3A%2F%2Fth.bing.com%2Fth%2Fid%2FR.ecd4a4d8520be11e3bb2ac38d7fc987b%3Frik%3DYaoWEyxdxb91Yw%26pid%3DImgRaw%26r%3D0&exph=467&expw=700&q=Anxiolytiques&simid=607988574881667278&form=IRPRST&ck=322658677675948612E3539B26D6789E&selectedindex=0&itb=0&ajaxhist=0&ajaxserp=0&pivotparams=insightsToken%3Dccid_VGrF2zM6*cp_C19BC4994A7B6875695785CDC8BE2776*mid_19B64123571C8B183B13A076C7F76036ED9317A9*simid_607996653655707767*thid_OIP.VGrF2zM69TGVD-HJa53vEgHaD4&vt=0&sim=11&iss=VSI&ajaxhist=0&ajaxserp=0" target="_blank">Lien vers Médicament</a>
         </div>  
         <div class="grid-item">
-            <img src="images/bild2_telenotarzt_1000px.jpg" alt="">
+            <img src="images/bild2_telenotarzt_1000px.jpg" alt="photo d'intérieur d'ambulance">
         </div>
         <div class="grid-item">
-            <a href="https://www.bing.com/images/search?view=detailV2&ccid=9wYitcFk&id=5C41C69DD012EA7E861408A0613E6CF2C5AD9AFD&thid=OIP.9wYitcFkvp7NEnTX1HjAUQHaFS&mediaurl=https%3A%2F%2Fwww.was-vehicles.com%2Ffileadmin%2Fuser_upload%2FBilder%2FUnternehmen%2FNews%2F2017%2FTelenotarztsystem__die_Rettung_der_Zukunft%2Fbild2_telenotarzt_1000px.jpg&cdnurl=https%3A%2F%2Fth.bing.com%2Fth%2Fid%2FR.f70622b5c164be9ecd1274d7d478c051%3Frik%3D%252fZqtxfJsPmGgCA%26pid%3DImgRaw%26r%3D0&exph=714&expw=1000&q=outils+de+medecine+d%27urgence&simid=608047695087542422&form=IRPRST&ck=8A82F3C9316797CD7961EF773F7509F2&selectedindex=64&itb=0&ajaxhist=0&ajaxserp=0&vt=0&sim=11"></a>
+            <a href="https://www.bing.com/images/search?view=detailV2&ccid=9wYitcFk&id=5C41C69DD012EA7E861408A0613E6CF2C5AD9AFD&thid=OIP.9wYitcFkvp7NEnTX1HjAUQHaFS&mediaurl=https%3A%2F%2Fwww.was-vehicles.com%2Ffileadmin%2Fuser_upload%2FBilder%2FUnternehmen%2FNews%2F2017%2FTelenotarztsystem__die_Rettung_der_Zukunft%2Fbild2_telenotarzt_1000px.jpg&cdnurl=https%3A%2F%2Fth.bing.com%2Fth%2Fid%2FR.f70622b5c164be9ecd1274d7d478c051%3Frik%3D%252fZqtxfJsPmGgCA%26pid%3DImgRaw%26r%3D0&exph=714&expw=1000&q=outils+de+medecine+d%27urgence&simid=608047695087542422&form=IRPRST&ck=8A82F3C9316797CD7961EF773F7509F2&selectedindex=64&itb=0&ajaxhist=0&ajaxserp=0&vt=0&sim=11" target="_blank">Lien vers Ambulance</a>
         </div>  
         <div class="grid-item">
-            <img src="images/urgence-pharmacie.jpg" alt="">
+            <img src="images/urgence-pharmacie.jpg" alt=" photo des urgentistes">
         </div>
         <div class="grid-item">
-            <a href="https://www.bing.com/images/search?view=detailV2&ccid=N6KV2b3m&id=BE1E0E933904D431580818AE47E18C3B1BD68CB5&thid=OIP.N6KV2b3mxgAWhfF-gWTBsgHaE8&mediaurl=https%3A%2F%2Fsimusante.com%2Fwordpress%2Fwp-content%2Fuploads%2Furgence-pharmacie.jpg&exph=964&expw=1444&q=outils+de+medecine+d%27urgence&simid=607987595652649308&form=IRPRST&ck=FA17A0069C11FB413023E20B86E0DF0C&selectedindex=101&itb=0&ajaxhist=0&ajaxserp=0&vt=0&sim=11&cdnurl=https%3A%2F%2Fth.bing.com%2Fth%2Fid%2FR.37a295d9bde6c6001685f17e8164c1b2%3Frik%3DtYzWGzuM4UeuGA%26pid%3DImgRaw%26r%3D0"></a>
+            <a href="https://www.bing.com/images/search?view=detailV2&ccid=N6KV2b3m&id=BE1E0E933904D431580818AE47E18C3B1BD68CB5&thid=OIP.N6KV2b3mxgAWhfF-gWTBsgHaE8&mediaurl=https%3A%2F%2Fsimusante.com%2Fwordpress%2Fwp-content%2Fuploads%2Furgence-pharmacie.jpg&exph=964&expw=1444&q=outils+de+medecine+d%27urgence&simid=607987595652649308&form=IRPRST&ck=FA17A0069C11FB413023E20B86E0DF0C&selectedindex=101&itb=0&ajaxhist=0&ajaxserp=0&vt=0&sim=11&cdnurl=https%3A%2F%2Fth.bing.com%2Fth%2Fid%2FR.37a295d9bde6c6001685f17e8164c1b2%3Frik%3DtYzWGzuM4UeuGA%26pid%3DImgRaw%26r%3D0" target="_blank">Lien vers Urgence-pharmacie</a>
         </div>
         <div class="grid-item">
-            <img src="images/9f06ee_b8ce9cb8806b4b838f30b1064e94d573~mv2.webp" alt="photo d'une Thérapie régénérative">
+            <img src="images/visuel-medecins-specialistes.jpg" alt="photo d'un médecin spéeciliste">
         </div> 
         <div class="grid-item">
-            <a href="https://www.bing.com/images/search?view=detailV2&ccid=tiwnE52C&id=7F5059C9816988CD8173FCF54FE3C6564CF2C23B&thid=OIP.tiwnE52Cpvz9mXVhKllqzwHaDJ&mediaurl=https%3A%2F%2Fstatic.wixstatic.com%2Fmedia%2F9f06ee_b8ce9cb8806b4b838f30b1064e94d573~mv2.jpg%2Fv1%2Ffill%2Fw_980%2Ch_417%2Cal_c%2Cq_85%2Cusm_0.66_1.00_0.01%2Cenc_auto%2F9f06ee_b8ce9cb8806b4b838f30b1064e94d573~mv2.jpg&exph=417&expw=980&q=medecine&form=IRPRST&ck=0F92B23D55D52BCA75ACC2C8AB219B48&selectedindex=6&itb=0&ajaxhist=0&ajaxserp=0&cdnurl=https%3A%2F%2Fth.bing.com%2Fth%2Fid%2FR.b62c27139d82a6fcfd9975612a596acf%3Frik%3DO8LyTFbG40%252f1%252fA%26pid%3DImgRaw%26r%3D0&pivotparams=insightsToken%3Dccid_rkQbUh2x*cp_A31D4D632CC26EC9585AFCC657B22E91*mid_2D9C2153A53DAFADBDDC1413816C9C47F1B49362*simid_608005578651273299*thid_OIP.rkQbUh2xgcoflfZEg0CMzAHaEK&vt=0&sim=11&iss=VSI&simid=608031168082312690"></a>
+            <a href="https://www.bing.com/images/search?view=detailV2&ccid=7sZsVA8U&id=030C2B5E72F724D6BD7E63DA61E32534071AF673&thid=OIP.7sZsVA8Uabjc7P7N2PbOegHaE8&mediaurl=https%3a%2f%2fwww.urpsmlb.org%2fwp-content%2fuploads%2f2016%2f12%2fvisuel-medecins-specialistes.jpg&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.eec66c540f1469b8dcecfecdd8f6ce7a%3frik%3dc%252fYaBzQl42HaYw%26pid%3dImgRaw%26r%3d0&exph=1335&expw=2000&q=medecin+speciliste&simid=608036412211341228&FORM=IRPRST&ck=5BDEBE9E6D1EF04DD601D91B33186887&selectedIndex=1&itb=0&ajaxhist=0&ajaxserp=0"target="_blank">Lien vers medecin speciliste</a>
         </div>
         <div class="grid-item">
-             <img src="images/OIP (5).jpg" alt="photo de médecine interne générale"></div>  
+             <img src="images/generale.jpg" alt="photo de médecine interne générale"></div>  
         <div class="grid-item">
-            <a href="https://www.bing.com/images/search?view=detailV2&ccid=EeMxvQl9&id=2E51BCDD1D553D9FB53209B9DFCA372ECB2ECCA8&thid=OIP.EeMxvQl9m8in3V8nFDFQ5AHaE8&mediaurl=https%3A%2F%2Fwww.hug.ch%2Fsites%2Finterhug%2Ffiles%2Fstyles%2Fimage_ratio_3_2%2Fpublic%2Fmedia%2Fimages%2F2023-02%2F20230127_unite_juliard_033_9_light.jpg%3Fh%3D1c3d0229%26itok%3D09_gQUIX&cdnurl=https%3A%2F%2Fth.bing.com%2Fth%2Fid%2FR.11e331bd097d9bc8a7dd5f27143150e4%3Frik%3DqMwuyy43yt%252b5CQ%26pid%3DImgRaw%26r%3D0&exph=640&expw=960&q=medecine&simid=607997886352483970&form=IRPRST&ck=BAADB059D23A1B0136B41C852FB2BADB&selectedindex=59&itb=0&ajaxhist=0&ajaxserp=0&vt=0&sim=11">Lien</a>
+            <a href="https://www.bing.com/images/search?view=detailV2&ccid=EeMxvQl9&id=2E51BCDD1D553D9FB53209B9DFCA372ECB2ECCA8&thid=OIP.EeMxvQl9m8in3V8nFDFQ5AHaE8&mediaurl=https%3A%2F%2Fwww.hug.ch%2Fsites%2Finterhug%2Ffiles%2Fstyles%2Fimage_ratio_3_2%2Fpublic%2Fmedia%2Fimages%2F2023-02%2F20230127_unite_juliard_033_9_light.jpg%3Fh%3D1c3d0229%26itok%3D09_gQUIX&cdnurl=https%3A%2F%2Fth.bing.com%2Fth%2Fid%2FR.11e331bd097d9bc8a7dd5f27143150e4%3Frik%3DqMwuyy43yt%252b5CQ%26pid%3DImgRaw%26r%3D0&exph=640&expw=960&q=medecine&simid=607997886352483970&form=IRPRST&ck=BAADB059D23A1B0136B41C852FB2BADB&selectedindex=59&itb=0&ajaxhist=0&ajaxserp=0&vt=0&sim=11" target="_blank"> Lien vers Méedecin interne</a>
         </div>
-        <div class="grid-item">images 5</div>
-        <div class="grid-item">9</div> 
-        <div class="grid-item">images 6</div>
-        <div class="grid-item">6</div>  
-        <div class="grid-item">images 7</div>
-        <div class="grid-item">8</div>
+        <div class="grid-item">
+            <img src="images/OIP.jpg" alt="photo de medecin">
+        </div>
+        <div class="grid-item">
+            <a href="https://www.bing.com/images/search?view=detailV2&ccid=YF8nL%2bvQ&id=9D6A5AE24C31A88DA0260AC90114B1426A20295E&thid=OIP.YF8nL-vQw1FZMp8mDwmrUwHaE8&mediaurl=https%3a%2f%2fwww.fatex.fr%2fwp-content%2fuploads%2f2022%2f04%2fmedia-tout-savoir-sur-le-metier-de-medecin.jpg&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.605f272febd0c35159329f260f09ab53%3frik%3dXikgakKxFAHJCg%26pid%3dImgRaw%26r%3d0&exph=800&expw=1200&q=Metier+Medecine&simid=608014207223665055&FORM=IRPRST&ck=3D9BC9DD382A13E8801638D093F8C7CA&selectedIndex=2&itb=0&ajaxhist=0&ajaxserp=0" target="_blank">Lien vers Médecin</a>
+        </div> 
+        <div class="grid-item">
+            <img src="images/télécharger.jpg" alt=" photo de medecin">
+        </div>
+        <div class="grid-item">
+            <a href="https://www.bing.com/images/search?view=detailV2&ccid=X1lcQLGn&id=A61372D45427E177D695D06F6A5F221F5BA54260&thid=OIP.X1lcQLGn71ZQV6paJ5dqegHaE8&mediaurl=https%3a%2f%2fwww.ivoire.campusfrance.org%2fsites%2fpays%2ffiles%2fivoire%2fMDECIN+AFRICAINE_0.jpg&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.5f595c40b1a7ef565057aa5a27976a7a%3frik%3dYEKlWx8iX2pv0A%26pid%3dImgRaw%26r%3d0&exph=1667&expw=2500&q=medecine&simid=608040445184587581&FORM=IRPRST&ck=0E19CB59915761C6C1D1097307BE281E&selectedIndex=14&itb=0&ajaxhist=0&ajaxserp=0" target="_blank">Lien vers Médecin</a>
+        </div>  
+        <div class="grid-item">
+            <img src="images/téléchargement .jpg" alt=" photo d'un tétoscope">
+        </div>
+        <div class="grid-item"> 
+            <a href="https://www.bing.com/images/search?view=detailV2&ccid=Y%2fNACy61&id=4F5FADAB4F4666EBEDB4F77A8B901F46473C61CB&thid=OIP.Y_NACy61pLiDRkjymSNkTQHaE8&mediaurl=https%3a%2f%2fwww.medecine-globale.ch%2fwp-content%2fuploads%2f2016%2f01%2fmedecine-globale.jpg&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.63f3400b2eb5a4b8834648f29923644d%3frik%3dy2E8R0YfkIt69w%26pid%3dImgRaw%26r%3d0&exph=1575&expw=2360&q=medecine&simid=608020280315813970&FORM=IRPRST&ck=94F3E5A8369CDC7A43B5A8DFF55F978F&selectedIndex=1&itb=0&ajaxhist=0&ajaxserp=0" target="_blank">Lien vers Stétoscope</a>
+        </div>
       </div>
       
 </body>
