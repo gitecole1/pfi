@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,15 +26,114 @@ div:nth-child(2) {
   text-align: center;
 }
 a:hover {
-  color: hotpink;
+  color: blue;
   
 }
 a {
  text-decoration: none;
 }
-    </style>
+.grid{
+   border: 2px solid black;
+   margin-bottom: 1%;
+   
+}
+.flex{
+    display: flex;
+   flex-wrap: wrap;
+   justify-content: space-evenly;
+  font-size: large;
+   
+}
+
+@media screen and (max-width: 360px){
+     
+  .grid-container {
+  display: grid;
+  grid-template-columns: auto auto  ;
+  border: 2px solid black;
+ 
+  width: 126%;
+}
+
+.grid{
+  width: 126%;
+}
+.grid-container > div {
+  
+  font-size: 16px;
+}
+a{
+   color: green;
+   text-decoration: none;
+}
+a:hover{
+color: blue;
+}
+
+
+}
+
+@media screen and (max-width: 280px){
+     
+     .grid-container {
+     display: grid;
+     grid-template-columns: auto auto  ;
+     border: 2px solid black;
+    
+     width: 153%;
+   }
+   
+   .grid{
+     width: 153%;
+   }
+   .grid-container > div {
+  
+  font-size: 11px;
+  
+ 
+}
+   a{
+      color: rgb(128, 0, 0);
+      text-decoration: none;
+   }
+   a:hover{
+   color: blue;
+   }
+   
+   
+   }
+  </style>
 </head>
 <body>
+    <div class="grid">
+      <div>
+        <div class="flex">
+          <div class="conteneur">
+              <a href="horaire.html">horaire</a> 
+          </div>
+
+          <div class="conteneur">
+           <a href="index.html">Acceuil</a> 
+       </div>
+
+       <div class="conteneur">
+           <a href="kb2plus.html">Kb2</a> 
+       </div>
+
+       <div class="conteneur">
+           <a href="galerie.html">Galerie</a> 
+       </div>
+
+       <div class="conteneur">
+           <a href="sources.html">Sources</a> 
+       </div>
+
+       <div class="conteneur">
+           <a href="sujet.html">Sujet</a> 
+       </div>
+       </div>
+      </div>
+    </div>
     <div class="grid-container">
   <div class="grid-item"><H3>PROFESSIONS</H3></div>
   <div class="grid-item"> <H3>DESCRIPTIONS</H3></div>
