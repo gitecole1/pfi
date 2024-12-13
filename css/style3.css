@@ -12,6 +12,10 @@
     text-align: left;
     
   }
+
+  .item8{
+    line-height: 2%;
+  }
   
   .item1 {
     grid-column-start: 1;
