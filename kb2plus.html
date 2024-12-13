@@ -10,13 +10,13 @@
 .dropbtn {
   background-color: #04AA6D;
   color: white;
-  padding: 16px;
+  padding: 12px;
   font-size: 16px;
   border: none;
 }
 
 .dropdown {
-  position: relative;
+  position:relative;
   display: inline-block;
 }
 
@@ -24,16 +24,16 @@
   display: none;
   position: absolute;
   background-color: #f1f1f1;
-  min-width: 160px;
+  min-width: 18px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+ 
 }
 
 .dropdown-content a {
   color: black;
-  padding: 12px 16px;
+  padding: 12px 10px;
   text-decoration: none;
-  display: block;
+ 
 }
 
 .dropdown-content a:hover {background-color: #ddd;}
@@ -42,14 +42,26 @@
 
 .dropdown:hover .dropbtn {background-color: #3e8e41;}
 
-
+details > summary {
+  padding: 4px;
+  width: 120px;
+  background-color: #eeeeee;
+  border: none;
+  box-shadow: 1px 1px 2px #bbbbbb;
+  cursor: pointer;
+}
+details > p {
+  background-color: #eeeeee;
+  padding: 4px;
+  margin: 0;
+  box-shadow: 1px 2px #bbbbbb;
+}
 </style>
 </head>
     <body>
     
             <h2>BALISE QUI N'ONT PAS ÉTÉ VUE EN CLASSE</h2>
-            <p>Move the mouse over the button to open the dropdown menu.</p>
-            
+         
             <div class="dropdown">
               <button class="dropbtn">Dropdown</button>
               <div class="dropdown-content">
@@ -60,6 +72,38 @@
                 <a href="sujet.html">Sujet</a>
                 <a href="sources.html">Sources</a>
               </div>
-            
+                 
+              <h3>Explication du menu déroulant</h3>
+
+              <p>Un menu déroulant consiste en une liste d'options sur un site Web qui apparaît uniquement lorsque l'utilisateur interagit avec le menu, par exemple, en cliquant dessus ou en le survolant avec la souris.
+                Dans le menu déroulant présenter ci-dessus se trouve les liens vers mes autres pages de ma Pfi. 
+              </p>
+              <details>
+                <summary>explications</summary>
+                <p>L'élément HTML summary  représente une boîte permettant de révéler le contenu d'un résumé ou d'une légende pour le contenu d'un élément details. 
+                   En cliquant sur l'élément summary,on passe de l'état affiché à l'état masqué (et vice versa) de l'élément details parent.
+                </p>
+              </details>
+
+              <p>
+                L'élément HTML SUP est utilisé, pour des raisons typographiques, afin d'afficher du texte en exposant (plus haut et généralement plus petit) par rapport au bloc de texte environnant. 
+                Cet élément inclut uniquement les attributs universels.
+                Elle peut être utilisé de la manière suivante: 4X <sup>2</sup> + 5Y <sup>4</sup> = 0.
+              </p>
+
+              <p>
+                Le tag Address est utilisé pour souligner l'information sur les contacts du propriétaire du site ou de l'auteur de l'article. En tant que l'information des contacts on peut donner l'adresse, le numéro de téléphone, e-mail, le lien sur le site etc.
+                l'on peut l'utiliser de cette manière : <br>L'un de mes <abbr title="Cours de web">cours</abbr> cette session est très difficile à comprendre.
+              </p>
+             
+
+               <p>Le tag VAR est utilisé pour définir des valeurs mathématiques/variables. 
+                  Le contenu du tag var est affiché en italique. 
+                  Pour la description de parties de documents techniques, les tags suivants sont également utilisés:
+                  l'on peut l'utiliser de cet manière:
+                  <var>le texte situé à l'interieur de var se met en italique.</var>
+                 </p>
+        
+                 
     </body>
     </html>
