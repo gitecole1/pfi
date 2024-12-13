@@ -3,85 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Galerie</title>
-    <style>
-        .conteneur{
-         
-            
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-template-areas: 
-            "header   header  header"
-            "main     main    main"
-            "footer   footer  footer";
-            gap : 1px
-            
-        }
-
-        header{
-            grid-area: header;
-         
-        
-        }
-        
-        main{
-            grid-area: main ;
-           background-image: url(images/OIP\ \(6\).jpg);
-        }
-
-        footer{
-            grid-area: footer ;
-             background-color:rgb(210, 200, 227);
-        }
-
-        .flex{
-            display: flex;
-           flex-wrap: wrap;
-           justify-content: space-evenly;
-          
-           
-        }
-    
-        div.gallery img {
-             width: 100%;
-            height: auto;
-            border-radius: 10%;
-        }
-        div.gallery {
-         float: left;
-          width: 20%;
-          margin: 1%;
-          
-        }
-        p{
-            padding-left: 3%;
-            line-height: 5px;
-        }
-        @media screen and (max-width: 400px){
-             
-              div.gallery {
-              border: 1px solid #ccc;
-              float: left;
-              width: 100%;
-              background-color: pink;
-              margin: 5%;
-            }
-        }
-        a{
-            color: green;
-            text-decoration: none;
-        }
-       a:hover{
-        color: blue;
-       }
-      
-    
-     div.desc {
-         padding: 1%;
-         text-align: center;
-        }
-    
-    </style>
+    <title>Galerie d'images</title>
+    <link rel="stylesheet" href="css/style2.css">
+   
 </head>
 <body>
     <div class="conteneur">
