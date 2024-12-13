@@ -15,7 +15,7 @@ header{
       text-align: center;
       font-size: xx-large;
       margin-bottom: 3%;
-      background-image: url(images/visuel-medecins-specialistes.jpg);
+      background-image: url(../images/visuel-medecins-specialistes.jpg);
 }
 
 nav{
@@ -27,14 +27,14 @@ nav{
 
 main{
     grid-area: main;
-    padding-left: 15%;
+    padding-left: 10%;
     padding-right: 15%;
    
 }
 
 footer{
     grid-area: footer;
-    padding-left: 15%;
+    padding-left: 10%;
     
 }
 
