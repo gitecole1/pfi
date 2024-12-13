@@ -1,8 +1,5 @@
 
-body{
-  margin: 20%;
-  
-}
+
 .row {
   display: flex;
  
@@ -29,12 +26,12 @@ h3{
    }
 
 .image{
-    width: 100%;
-   height:9%;
+    width: 130%;
+   height:12%;
    margin: 15%;
   border-radius: 9em;
    background-size:cover;
-   background-image: url(../images/-314.jpg);
+   background-image: url(../images/green-planet-concept-green-tree-ptotecting-shell-with-sunshine-around-save-our-planet-earth-day_399963-4233.avif);
    
  }
 
@@ -49,7 +46,7 @@ h3{
     padding-left: 4%;
     font-size:x-large;
     text-wrap:wrap;
-    padding-bottom: 4px;
+    padding-bottom: 8px;
 
 }
 
@@ -59,7 +56,7 @@ h3{
 .bloc{
     background-color: rgb(12, 142, 142);
     border: 2px solid rgba(18, 219, 31, 0.626);
-    width: 83%;
+    width: 84%;
     padding:8%;
 }
 
@@ -67,7 +64,7 @@ h3{
     border: 2px solid black;
     text-align: center;
     font-size: x-large;
-    padding: 1%;
+    padding: 2%;
 }
 
 
@@ -87,11 +84,12 @@ p{
     border: 2px solid black;
     height:19%;
     margin-left: 5%;
-    margin-right: 16%;
+    margin-right: 18%;
+    margin-top: 2%;
     flex-wrap:wrap;
-    text-align: center;
     font-size: x-large;
     margin-bottom: 3%;
+    padding-left: 25%;
 }
 .conteneur {
     display: flex;
@@ -130,11 +128,11 @@ p{
 
     .image{
         max-width: 100%;
-       max-height:5%;
+       max-height:10%;
        margin: 15%;
       border-radius: 6em;
        background-size:cover;
-       background-image: url(../images/-314.jpg);
+       background-image: url(../images/green-planet-concept-green-tree-ptotecting-shell-with-sunshine-around-save-our-planet-earth-day_399963-4233.avif);
        
      }
     .column1 {
@@ -144,9 +142,9 @@ p{
       }
       .flex1{
         display: flex;
-        font-size: medium;
-         border: 2px solid rgba(53, 16, 216, 0.407);
-        color: rgb(29, 197, 77);
+        font-size: x-large;
+         border: 2px solid black;
+        color: rgb(160, 232, 51);
       }
       
         
@@ -157,19 +155,19 @@ p{
      background-color:white;
      padding-bottom: 15%;
     }
-      .bloc{
-        display: flex;
-        background-color: aqua;
-        border: 2px solid rgba(18, 219, 31, 0.626);
-        width: 98%;
-        
-    }
+      
     .flex3{
         display: flex;
         border: 2px solid black;
-        font-size:large;
-       
+        font-size:x-large;
+       padding-left: 5%;
     }
+    .bloc{
+      background-color: rgb(22, 200, 149);
+      border: 2px solid rgba(18, 219, 135, 0.626);
+      width: 97%;
+      padding:8%;
+  }
    
    
 }
@@ -178,17 +176,17 @@ p{
 @media screen and (max-width: 600px){
 
     .image{
-        max-width: 100%;
-       max-height:5%;
+        max-width: 85%;
+       max-height:7%;
        margin: 15%;
       border-radius: 6em;
        background-size:cover;
-       background-image: url(../images/-314.jpg);
+       background-image: url(../images/green-planet-concept-green-tree-ptotecting-shell-with-sunshine-around-save-our-planet-earth-day_399963-4233.avif);
        
      }
     .column1 {
-        flex: 30%;
-        max-width:24%;
+        
+        max-width:40%;
        
       }
 
@@ -203,9 +201,12 @@ p{
        }
       .flex1{
         display: flex;
-        font-size: medium;
-         border: 2px solid rgba(53, 16, 216, 0.407);
-        color: rgb(29, 197, 77);
+        font-size: x-large;
+         border: 2px solid rgba(16, 86, 216, 0.407);
+        color: rgb(29, 79, 197);
+        padding-bottom: 1%;
+        padding-top: 3%;
+        margin-left :10%;
       }
       
         
@@ -218,17 +219,90 @@ p{
     }
       .bloc{
         display: flex;
-        background-color: rgb(68, 36, 148);
+        background-color: rgb(29, 220, 204);
         border: 2px solid rgba(18, 219, 31, 0.626);
-        width: 98%;
+        width: 89%;
         
     }
     .flex3{
         display: flex;
-        border: 2px solid rgb(35, 203, 26);
-        font-size:large;
+        border: 2px solid rgb(9, 9, 9);
+        font-size:x-large;
+        padding-bottom: 5%;
        
     }
    
-   
+    .container{
+     
+      border: 3px solid #151414;
+      padding-bottom: 4%;
+      background-color: blue;
+      width: 130%;
+  }
+}
+
+
+@media screen and (max-width: 500px){
+
+  .image{
+      max-width: 100%;
+     max-height:6%;
+     margin: 15%;
+    border-radius: 6em;
+     background-size:cover;
+     background-image: url(../images/green-planet-concept-green-tree-ptotecting-shell-with-sunshine-around-save-our-planet-earth-day_399963-4233.avif);
+     
+   }
+  .column1 {
+      flex: 30%;
+      max-width:40%;
+     
+    }
+
+    h3{
+      margin-left: 10%;
+     }
+  
+     .column1>p{
+          
+          margin-right: 10%;
+           margin-left: 8%;
+     }
+    .flex1{
+      display: flex;
+      font-size: x-large;
+       border: 2px solid rgba(16, 86, 216, 0.407);
+      color: rgb(29, 79, 197);
+     padding-bottom: 0%;
+    }
+    
+      
+  .column2 {
+    flex: 30%;
+    max-width: 60%;
+   padding-right: 3%;
+   background-color:white;
+   padding-bottom: 15%;
+  }
+    .bloc{
+      display: flex;
+      background-color: rgb(29, 220, 156);
+      border: 2px solid rgba(18, 219, 31, 0.626);
+      width: 89%;
+      
+  }
+  .flex3{
+      display: flex;
+      border: 2px solid rgb(9, 9, 9);
+      font-size:x-large;
+      padding-bottom: 5%;
+     
+  }
+  .container{
+     
+      border: 3px solid #151414;
+      padding-bottom: 4%;
+      background-color: blue;
+      width: 130%;
+  }
 }
