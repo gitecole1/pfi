@@ -8,7 +8,7 @@
     <style>
         .container{
             display:grid;
-            grid-template-columns: 1fr 1fr 0.2fr;
+            grid-template-columns: 1fr 1fr 0.1fr;
             grid-template-areas: 
             " header header  nav"
             "main main main"
@@ -19,9 +19,9 @@
         header{
               grid-area: header;
               padding: 15%;
+              color: white;
               text-align: center;
               font-size: xx-large;
-              color: white;
               background-image: url(images/OIP.jpg);
         }
 
@@ -43,7 +43,7 @@
             
         }
         a{
-            color: green;
+            color: rgb(22, 170, 22);
             text-decoration: none;
         }
        a:hover{
@@ -57,11 +57,6 @@
        ul{
         padding-left: 6%;
        }
-
-        .source a{
-            color: white;
-            text-decoration: none;
-        }
 
        @media screen and (max-width: 400px){
     a{
@@ -90,25 +85,36 @@
     <div class="container">
 
         <header>
-           
+          
             <p> Sujet qui m'interesse: </p>
             <p>Le métier de médecin</p>
         </header>
         
         <nav>
-            <div class="sources">
-               
-                <a href="horaire.html">horaire</a> 
-              
+            <div class="flex">
+                <div class="conteneur">
+                    <a href="horaire.html">horaire</a> 
+                </div>
+ 
+                <div class="conteneur">
                  <a href="index.html">Acceuil</a> 
-             
+             </div>
+ 
+             <div class="conteneur">
                  <a href="kb2plus.html">Kb2</a> 
-             
+             </div>
+ 
+             <div class="conteneur">
                  <a href="professions.html">Professions</a> 
-        
+             </div>
+ 
+             <div class="conteneur">
                  <a href="sources.html">Sources</a> 
-        
+             </div>
+ 
+             <div class="conteneur">
                  <a href="sujet.html">Sujet</a> 
+             </div>
              </div>  
         </nav>
         <main>
