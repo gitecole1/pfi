@@ -91,12 +91,13 @@ p{
     font-size: x-large;
     margin-bottom: 3%;
     padding-left: 25%;
+    
 }
 .conteneur {
     display: flex;
     flex-flow: row; 
     margin-left: 4%;
-    margin-right: 18%;
+    margin-right: 1%;
   
 }
 
@@ -104,7 +105,8 @@ p{
 
 .grille1 {
     display: grid;
-    gap: 17em;
+    gap: 16em;
+    padding: 20%;
 }
 
 .grille2 {
